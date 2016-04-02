@@ -8,11 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    // Outlets
+    
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var cashTextField: UITextField!
+    @IBOutlet weak var lockableTextField: UITextField!
+    @IBOutlet weak var lockableTextFieldSwitch: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Set the delegates
+        self.zipCodeTextField.delegate = ZipCodeDelegate()
+        self.cashTextField.delegate = CashTextDelegate()
+        self.lockableTextField.delegate = self
+    
     }
 
     override func didReceiveMemoryWarning() {

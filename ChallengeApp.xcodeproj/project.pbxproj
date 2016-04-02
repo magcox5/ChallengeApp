@@ -12,6 +12,8 @@
 		DAE3C04E1CAF7A3700654765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE3C04C1CAF7A3700654765 /* Main.storyboard */; };
 		DAE3C0501CAF7A3800654765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE3C04F1CAF7A3800654765 /* Assets.xcassets */; };
 		DAE3C0531CAF7A3800654765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE3C0511CAF7A3800654765 /* LaunchScreen.storyboard */; };
+		DAE3C05C1CB050A800654765 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3C05B1CB050A800654765 /* ZipCodeDelegate.swift */; };
+		DAE3C05E1CB0522300654765 /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3C05D1CB0522300654765 /* CashTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DAE3C04F1CAF7A3800654765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE3C0521CAF7A3800654765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAE3C0541CAF7A3800654765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE3C05B1CB050A800654765 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		DAE3C05D1CB0522300654765 /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		DAE3C0471CAF7A3600654765 /* ChallengeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAE3C05A1CB0500700654765 /* Challenge App Delegates */,
 				DAE3C0481CAF7A3600654765 /* AppDelegate.swift */,
 				DAE3C04A1CAF7A3600654765 /* ViewController.swift */,
 				DAE3C04C1CAF7A3700654765 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				DAE3C0541CAF7A3800654765 /* Info.plist */,
 			);
 			path = ChallengeApp;
+			sourceTree = "<group>";
+		};
+		DAE3C05A1CB0500700654765 /* Challenge App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DAE3C05B1CB050A800654765 /* ZipCodeDelegate.swift */,
+				DAE3C05D1CB0522300654765 /* CashTextDelegate.swift */,
+			);
+			name = "Challenge App Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE3C05E1CB0522300654765 /* CashTextDelegate.swift in Sources */,
 				DAE3C04B1CAF7A3600654765 /* ViewController.swift in Sources */,
+				DAE3C05C1CB050A800654765 /* ZipCodeDelegate.swift in Sources */,
 				DAE3C0491CAF7A3600654765 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
